@@ -169,8 +169,33 @@ export const jobPosts: JobPost[] = [
     location: "Shenzhen, China",
     level: "Mid-level",
     description: "We are looking for a talented UI Designer to create beautiful and functional interfaces for our digital products.",
-    responsibilities: [],
-    requirements: [],
+    responsibilities: [
+      'Responsible for the UI design work of the company\'s products',
+      'Create visual design standards and design systems',
+      'Participate in the interaction design and user experience optimization of product interfaces',
+      'Collaborate closely with product and development teams',
+      'Continuously track and research design trends to enhance product visual experience',
+      'Participate in user research and design evaluation',
+    ],
+    requirements: [
+      {
+        title: 'Basic Requirements',
+        items: [
+          'Bachelor\'s degree or above in design-related majors',
+          '3+ years of UI design experience with a complete portfolio',
+          'Proficient in design tools such as Figma, Sketch',
+          'In-depth understanding of design trends and user experience',
+        ],
+      },
+      {
+        title: 'Professional Skills',
+        items: [
+          'Good communication skills and team collaboration spirit',
+          'Familiarity with design systems and component library design',
+          'Priority given to those with B2B or enterprise-level product design experience',
+        ],
+      },
+    ],
     benefits: benefits,
     salary: "$15,000 - $25,000/month",
     href: "/careers/ui-designer",
@@ -183,8 +208,33 @@ export const jobPosts: JobPost[] = [
     location: "Guangzhou, China",
     level: "Senior",
     description: "We are seeking an experienced Marketing Manager to lead our marketing initiatives and drive business growth.",
-    responsibilities: [],
-    requirements: [],
+    responsibilities: [
+      'Responsible for the market strategy development and execution of the company\'s products',
+      'Develop and manage market budgets, ensuring effective resource allocation',
+      'Lead the marketing team to carry out various marketing activities and promotion plans',
+      'Analyze market data and trends, providing decision-making suggestions',
+      'Collaborate with various departments to ensure market strategies align with company goals',
+      'Establish and maintain key customer relationships',
+    ],
+    requirements: [
+      {
+        title: 'Basic Requirements',
+        items: [
+          'Bachelor\'s degree or above in marketing or related majors',
+          '5+ years of B2B marketing experience, 2+ years of team management experience',
+          'Excellent project management and budget management skills',
+          'Outstanding data analysis skills and strategic thinking',
+        ],
+      },
+      {
+        title: 'Professional Skills',
+        items: [
+          'Excellent communication and leadership skills',
+          'Proficient in using various marketing tools and data analysis tools',
+          'Priority given to those with SaaS or enterprise service industry experience',
+        ],
+      },
+    ],
     benefits: benefits,
     salary: "$20,000 - $30,000/month",
     href: "/careers/marketing-manager",
