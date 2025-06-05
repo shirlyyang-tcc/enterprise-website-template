@@ -323,7 +323,6 @@ const BlocksPage: NextPage = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </MainLayout>
   );
