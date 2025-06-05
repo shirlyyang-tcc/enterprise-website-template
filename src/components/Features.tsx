@@ -1,26 +1,5 @@
-import { CogIcon, DevicePhoneMobileIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-
-const features = [
-  {
-    name: 'Customization',
-    description: 'Customize every detail of your website according to your needs, creating a unique brand image.',
-    icon: CogIcon,
-    href: '/features/customize',
-  },
-  {
-    name: 'Responsive Design',
-    description: 'Perfectly adapt to various devices, providing users with the best browsing experience.',
-    icon: DevicePhoneMobileIcon,
-    href: '/features/responsive',
-  },
-  {
-    name: 'Future-Proof',
-    description: 'Adopt the latest technology to ensure your website always stays ahead.',
-    icon: RocketLaunchIcon,
-    href: '/features/future-proof',
-  },
-];
+import { features } from '@/config/features';
 
 const Features = () => {
   return (
@@ -48,9 +27,9 @@ const Features = () => {
                   <p className="mt-6">
                     <Link
                       href={feature.href}
-                      className="text-sm font-semibold leading-6 text-primary"
+                      className="text-sm font-semibold leading-6 text-primary group inline-flex items-center hover:text-primary/80 transition-all duration-300"
                     >
-                      Learn More <span aria-hidden="true">→</span>
+                      Learn More <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                     </Link>
                   </p>
                 </dd>
