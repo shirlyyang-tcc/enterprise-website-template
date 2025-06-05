@@ -135,3 +135,6 @@ npm run build
 ## 许可证
 
 [MIT License](LICENSE)
+
+## 一键部署
+[![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.cloud.tencent.com/edgeone/pages/new?template=enterprise-website-template)

@@ -89,9 +89,9 @@ const Careers = () => {
           <div className="mt-10 flex justify-center">
             <Link
               href="/careers"
-              className="text-sm font-semibold leading-6 text-primary"
+              className="text-sm font-semibold leading-6 text-primary group inline-flex items-center hover:text-primary/80 transition-all duration-300"
             >
-              View All Positions <span aria-hidden="true">→</span>
+              View All Positions <span aria-hidden="true" className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
             </Link>
           </div>
         </div>
