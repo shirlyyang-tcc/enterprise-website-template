@@ -6,7 +6,6 @@ import Features from '../components/Features';
 import CaseStudies from '../components/CaseStudies';
 import Testimonials from '../components/Testimonials';
 import Careers from '../components/Careers';
-import Footer from '../components/Footer';
 import MainLayout from '../components/layouts/MainLayout';
 
 const HomePage: NextPage = () => {

@@ -1,23 +1,13 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+
 import { fullCaseStudies } from '../../config/case-studies';
+import MainLayout from '@/components/layouts/MainLayout';
 
 const CaseStudies: NextPage = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <Head>
-        <title>Case Studies - Corporate Website</title>
-        <meta
-          name="description"
-          content="Explore our successful case studies in digital transformation and enterprise solutions"
-        />
-      </Head>
-
-      <Navbar />
+    <MainLayout>
 
       <main>
         {/* Page Title */}
@@ -80,7 +70,7 @@ const CaseStudies: NextPage = () => {
       </main>
 
       
-    </div>
+    </MainLayout>
   );
 };
 

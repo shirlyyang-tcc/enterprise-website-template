@@ -1,5 +1,4 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import {
@@ -11,9 +10,8 @@ import {
   MapPinIcon,
   ClockIcon,
 } from '@heroicons/react/24/outline';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import { jobPosts, getJobPost, JobPost, Benefit } from '../../config/careers';
+import { jobPosts, getJobPost, JobPost } from '../../config/careers';
+import MainLayout from '@/components/layouts/MainLayout';
 
 const iconMap: { [key: string]: typeof CurrencyDollarIcon } = {
   CurrencyDollarIcon,
@@ -28,13 +26,7 @@ interface JobDetailProps {
 
 const JobDetail: NextPage<JobDetailProps> = ({ job }) => {
   return (
-    <div className="min-h-screen bg-white">
-      <Head>
-        <title>{job.title} - Technology Company Official Website</title>
-        <meta name="description" content={job.description} />
-      </Head>
-
-      <Navbar />
+    <MainLayout title={job.title} description={job.description}>
 
       <main className="relative py-20">
         {/* Back Button */}
@@ -163,7 +155,7 @@ const JobDetail: NextPage<JobDetailProps> = ({ job }) => {
       </main>
 
       
-    </div>
+    </MainLayout>
   );
 };
 

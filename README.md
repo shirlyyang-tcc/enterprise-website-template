@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Corporate Website Template
 
-## Getting Started
+A modern corporate website template built with Next.js and Tailwind CSS, supporting static site generation (SSG).
 
-First, run the development server:
+## Technology Stack
+
+- **Frontend Framework**: Next.js 15.3.1+
+- **Style Scheme**: Tailwind CSS V4
+- **UI Components**: shadcn/ui
+- **Type System**: TypeScript
+- **Code Standards**: ESLint + Prettier
+
+## Features
+
+- 📱 Responsive design, perfectly adapted to various devices
+- 🎨 Modern UI design, based on the shadcn/ui component library
+- 🚀 Static site generation (SSG), excellent performance
+- 🔍 SEO friendly
+- 💻 TypeScript support, providing complete type definitions
+
+## Page List
+
+- 🏠 Homepage (`/`)
+- 📄 About Us (`/about`)
+- 🛠️ Service Introduction (`/services`)
+- 📰 News Center (`/news`)
+- 📝 Blog (`/blog`)
+- 👥 Team Introduction (`/team`)
+- 💼 Job List (`/careers`)
+- 📞 Contact Us (`/contact`)
+- 🚀 Get Started (`/get-started`)
+
+## Quick Start
+
+1. **Clone the project**
+
+```bash
+git clone [project address]
+cd [project directory]
+```
+
+2. **Install dependencies**
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Start the development server**
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Build the production version**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+# or
+yarn build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+├── public/          # Static resources
+├── src/
+│   ├── components/  # Components
+│   │   ├── cards/   # Card components
+│   │   ├── layouts/ # Layout components
+│   │   └── ui/      # UI components
+│   ├── config/      # Configuration files
+│   ├── pages/       # Pages
+│   └── styles/      # Style files
+├── .eslintrc.js    # ESLint configuration
+├── .prettierrc     # Prettier configuration
+├── next.config.js  # Next.js configuration
+└── tailwind.config.js # Tailwind configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Configuration File Explanation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project uses multiple configuration files to manage data:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `config/articles.ts`: Blog article data
+- `config/careers.ts`: Job information
+- `config/get-started.ts`: Quick start guide
+- `config/team.ts`: Team member information
 
-## Deploy on Vercel
+## Development Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Component Development Standards
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Develop all components using TypeScript
+2. Use PascalCase for component naming
+3. Ensure proper Props type definitions are added
+4. Follow the project's established style guidelines
+
+### Style Development Standards
+
+1. Prioritize using Tailwind CSS class names
+2. Follow responsive design principles
+3. Maintain consistency in color and spacing
+
+### Page Development Standards
+
+1. Use the MainLayout component as the page layout
+2. Implement appropriate SEO optimization
+3. Ensure responsive performance on pages
+
+## Deployment Instructions
+
+The project uses static site generation (SSG), which can be deployed to any static hosting service:
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The generated static files are located in the `out` directory
+
+3. Deploy the `out` directory to your hosting service
+
+## Contribution Guidelines
+
+1. Fork the project
+2. Create a feature branch
+3. Submit changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+[MIT License](LICENSE)

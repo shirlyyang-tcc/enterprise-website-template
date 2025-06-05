@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { categories, posts } from '../../config/articles';
 import MainLayout from '../../components/layouts/MainLayout';
 

@@ -1,11 +1,9 @@
 import { NextPage, GetStaticProps, GetStaticPaths } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { fullCaseStudies } from '../../config/case-studies';
+import MainLayout from '@/components/layouts/MainLayout';
 
 interface CaseStudyDetailProps {
   caseStudy: (typeof fullCaseStudies)[0];
@@ -17,13 +15,7 @@ const CaseStudyDetail: NextPage<CaseStudyDetailProps> = ({ caseStudy }) => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      <Head>
-        <title>{caseStudy.title} - Case Study</title>
-        <meta name="description" content={caseStudy.description} />
-      </Head>
-
-      <Navbar />
+    <MainLayout title={caseStudy.title} description={caseStudy.description}>
 
       <main>
         {/* Hero Section */}
@@ -173,7 +165,7 @@ const CaseStudyDetail: NextPage<CaseStudyDetailProps> = ({ caseStudy }) => {
       </main>
 
       
-    </div>
+    </MainLayout>
   );
 };
 

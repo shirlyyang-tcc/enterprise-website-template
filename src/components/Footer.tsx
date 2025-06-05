@@ -57,7 +57,6 @@ const Footer = () => {
                   className="text-gray-500 hover:text-gray-400"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
                 </Link>
               ))}
             </div>
