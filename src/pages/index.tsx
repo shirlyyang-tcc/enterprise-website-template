@@ -32,7 +32,6 @@ const HomePage: NextPage = () => {
           <Careers />
         </main>
 
-        <Footer />
       </div>
     </MainLayout>
   );

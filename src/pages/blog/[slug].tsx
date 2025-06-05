@@ -154,7 +154,6 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </MainLayout>
   );

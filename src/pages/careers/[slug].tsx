@@ -162,7 +162,7 @@ const JobDetail: NextPage<JobDetailProps> = ({ job }) => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

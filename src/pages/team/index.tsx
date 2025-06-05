@@ -85,7 +85,7 @@ const TeamPage: NextPage = () => {
           </div>
         </main>
 
-        <Footer />
+        
       </div>
     </MainLayout>
   );

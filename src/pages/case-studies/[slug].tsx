@@ -172,7 +172,7 @@ const CaseStudyDetail: NextPage<CaseStudyDetailProps> = ({ caseStudy }) => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

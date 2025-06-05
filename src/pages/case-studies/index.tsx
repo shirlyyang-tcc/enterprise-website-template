@@ -79,7 +79,7 @@ const CaseStudies: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

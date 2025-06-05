@@ -103,7 +103,7 @@ const AboutPage: NextPage = () => {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/about/company.jpg"
+                    src="/about/company.png"
                     alt="Company Office Environment"
                     width={800}
                     height={600}
@@ -191,7 +191,6 @@ const AboutPage: NextPage = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </MainLayout>
   );

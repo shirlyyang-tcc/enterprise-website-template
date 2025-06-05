@@ -202,7 +202,7 @@ const Pricing: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

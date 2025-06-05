@@ -205,7 +205,7 @@ const Contact: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

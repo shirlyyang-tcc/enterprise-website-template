@@ -221,7 +221,6 @@ const Blocks: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 };

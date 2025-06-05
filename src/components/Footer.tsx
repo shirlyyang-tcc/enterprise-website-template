@@ -10,7 +10,6 @@ const navigation = {
   ],
   company: [
     { name: 'About Us', href: '/about' },
-    { name: 'News', href: '/news' },
     { name: 'Join Us', href: '/careers' }
   ],
   social: [

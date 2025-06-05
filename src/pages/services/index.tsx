@@ -203,7 +203,7 @@ const Services: NextPage = () => {
         </div>
       </main>
 
-      <Footer />
+      
     </div>
   );
 };
