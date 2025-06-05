@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 import { posts, getRelatedPosts, Post } from '../../config/articles';
 import MainLayout from '../../components/layouts/MainLayout';
 
@@ -17,7 +16,7 @@ const BlogPost: NextPage<BlogPostProps> = ({ article, relatedArticles }) => {
   return (
     <MainLayout
       title={`${article.title} - Technology Company Blog`}
-      description={article.excerpt}
+      description={article.description}
     >
       <div className="min-h-screen bg-white pt-20">
         <Head>

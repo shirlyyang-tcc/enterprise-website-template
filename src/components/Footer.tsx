@@ -36,7 +36,7 @@ const navigation = {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <footer className="bg-footer" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -46,7 +46,7 @@ const Footer = () => {
             <Link href="/" className="text-2xl font-bold text-white">
               Corporate Website
             </Link>
-            <p className="text-sm leading-6 text-gray-300">
+            <p className="text-sm leading-6 text-white">
               Building professional corporate website solutions, empowering corporate digital transformation
             </p>
             <div className="flex space-x-6">
@@ -54,7 +54,7 @@ const Footer = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
+                  className="text-white hover:text-white"
                 >
                   <span className="sr-only">{item.name}</span>
                 </Link>
@@ -69,7 +69,7 @@ const Footer = () => {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link href={item.href} className="text-sm leading-6 text-white hover:text-white">
                         {item.name}
                       </Link>
                     </li>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link href={item.href} className="text-sm leading-6 text-white hover:text-white">
                         {item.name}
                       </Link>
                     </li>
@@ -94,7 +94,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
+          <p className="text-xs leading-5 text-white">
             &copy; {new Date().getFullYear()} Corporate Website. All rights reserved.
           </p>
         </div>
